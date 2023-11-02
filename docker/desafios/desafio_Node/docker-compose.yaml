@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+  node:
+    container_name: node
+    build:
+      context: node
+    tty: true  
+    volumes:
+      - ./node:/usr/src/app
+    ports:
+      - "3000:3000"
+    command: node index.js
+    depends_on:
+      - db
+    entrypoint: dockerize -wait tcp://db:3306 -timeout 20s docker-entrypoint.sh
+    expose:
+      - "3000"
+    networks:
+      - desafio-network
+  
+  nginx:
+    image: nginx_desafio
+    build:
+      context: ./nginx
+    container_name: nginx
+    networks:
+      - desafio-network
+    ports:
+      - "8080:8080"
+
+  db:
+    image: mysql:5.7
+    command: --innodb-use-native-aio=0
+    container_name: db_desafio
+    restart: always
+    tty: true
+    volumes:
+      - ./mysql:/var/lib/mysql
+      - ./table.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      - MYSQL_DATABASE=nodedb
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=root
+
+    networks:
+      - desafio-network
+
+networks:
+  desafio-network:
+    driver: bridge
