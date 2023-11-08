@@ -10,7 +10,7 @@ services:
       - ./node:/usr/src/app
     ports:
       - "3000:3000"
-    command: node index.js
+    command: bash -c "npm install && npm start"
     depends_on:
       - db
     entrypoint: dockerize -wait tcp://db:3306 -timeout 20s docker-entrypoint.sh
