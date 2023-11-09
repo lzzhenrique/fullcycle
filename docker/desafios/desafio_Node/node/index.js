@@ -18,12 +18,6 @@ function createConnection() {
     return connection;
 }
 
-const connection = createConnection();
-const sqlInsert = `INSERT INTO people(name) values('${name}')`;
-connection.query(sqlInsert);
-connection.end();
-
-
 async function getFields() {
     const connection = createConnection();
 
@@ -36,8 +30,23 @@ async function getFields() {
     });
 }
 
+async function insertName() {
+    const connection = createConnection();
+
+    const sqlInsert = `INSERT INTO people(name) values('${name}')`;
+
+    return new Promise(function (resolve, reject    ) {
+        connection.query(sqlInsert, (error, results, fields) => {
+            connection.end();
+            return resolve(results);
+        });
+    });
+}
+
 
 app.get('/', async (req, res) => {
+    await insertName();
+
     let title = '<h1>Full Cycle Rocks!</h1> \n';
     let lista = '<ol> \n';
 
