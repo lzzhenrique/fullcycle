@@ -65,6 +65,36 @@ describe("Order repository test", () => {
     }
   };
 
+  const createOrders = async (orderRepository: OrderRepository, orderQuantity: number) => {
+    const customerRepository = new CustomerRepository();
+    const customer = new Customer("123", "Customer 1");
+    const address = new Address("Street 1", 1, "Zipcode 1", "City 1");
+    customer.changeAddress(address);
+    await customerRepository.create(customer);
+
+    const productRepository = new ProductRepository();
+    const product = new Product("123", "Product 1", 10);
+    await productRepository.create(product);
+    const orders = [];
+
+    for (let index = 0; index < orderQuantity; index++) {
+      const orderItem = new OrderItem(
+          index.toString(),
+          product.name,
+          product.price,
+          product.id,
+          2
+      );
+
+      const order = new Order(index.toString(), "123", [orderItem]);
+
+      await orderRepository.create(order);
+      orders.push(order);
+    }
+
+    return orders;
+  };
+
   it("should create a new order", async () => {
     const orderRepository = new OrderRepository();
 
@@ -102,5 +132,16 @@ describe("Order repository test", () => {
     const orderFinded = await orderRepository.find(order.id);
 
     expect(order).toEqual(orderFinded);
+  });
+  it("should find all orders", async () => {
+    const orderRepository = new OrderRepository();
+
+    const orders = await createOrders(orderRepository, 5);
+
+    const ordersFinded = await orderRepository.findAll();
+
+    orders.forEach((order, index) => {
+      expect(order).toEqual(ordersFinded[index]);
+    });
   });
 });
