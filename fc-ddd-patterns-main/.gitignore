@@ -1,8 +1,7 @@
-FullCycle.pdf
-.idea
 node_modules
-sys
-docker/mysql
+.vscode
+.swc
+dist
 package-lock.json
 package.json
 fc-ddd-patterns-main/package-lock.json
