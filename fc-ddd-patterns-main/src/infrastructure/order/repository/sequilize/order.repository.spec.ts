@@ -144,4 +144,35 @@ describe("Order repository test", () => {
       expect(order).toEqual(ordersFinded[index]);
     });
   });
+  it("should update a order", async () => {
+    const orderRepository = new OrderRepository();
+    const productRepository = new ProductRepository();
+
+    const {order} = await createOrder(orderRepository);
+    const orderDataBeforeUpdate =  {
+      "itemsQuantity": order.items.length,
+      "totalOrder": order.total()
+    };
+
+    const product = new Product("1234", "Product 2", 100);
+    await productRepository.create(product);
+    const product2 = new Product("12345", "Product 3", 20);
+    await productRepository.create(product2);
+    const product3 = new Product("123456", "Product 4", 50);
+    await productRepository.create(product3);
+
+    const newItem = new OrderItem("2", product.name, product.price, product.id, 2);
+    const newItem2 = new OrderItem("3", product2.name, product2.price, product2.id, 4);
+    const newItem3 = new OrderItem("4", product3.name, product3.price, product3.id, 6);
+
+    const newItens = [newItem, newItem2, newItem3];
+    newItens.forEach((item) => order.addItem(item));
+
+    await orderRepository.update(order);
+    const orderFindedAfterUpdate = await orderRepository.find(order.id);
+
+    expect(orderFindedAfterUpdate).toEqual(order);
+    expect(orderFindedAfterUpdate.items.length).not.toEqual(orderDataBeforeUpdate.itemsQuantity)
+    expect(orderFindedAfterUpdate.total()).not.toEqual(orderDataBeforeUpdate.totalOrder)
+  });
 });

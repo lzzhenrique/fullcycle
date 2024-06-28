@@ -3,9 +3,10 @@ import OrderItemModel from "./order-item.model";
 import OrderModel from "./order.model";
 import OrderRepositoryInterface from "../../../../domain/checkout/repository/order-repository.interface";
 import OrderItem from "../../../../domain/checkout/entity/order_item";
+import ProductModel from "../../../product/repository/sequelize/product.model";
 
 export default class OrderRepository implements OrderRepositoryInterface{
-  async create(entity: Order): Promise<void> {
+    async create(entity: Order): Promise<void> {
     await OrderModel.create(
       {
         id: entity.id,
@@ -57,7 +58,24 @@ export default class OrderRepository implements OrderRepositoryInterface{
         })
     }
 
-    update(entity: Order): Promise<void> {
-        return Promise.resolve(undefined);
+    async update(entity: Order): Promise<void> {
+        const orderModel = await OrderModel.findByPk(entity.id);
+        await orderModel.save();
+
+        for (const item of entity.items) {
+            const itemModel = await OrderItemModel.findByPk(item.id);
+            if (itemModel) {
+                await itemModel.destroy()
+            }
+
+            await OrderItemModel.create({
+                id: item.id,
+                product_id: item.productId,
+                order_id: entity.id,
+                quantity: item.quantity,
+                name: item.name,
+                price: item.price
+            });
+        }
     }
 }
