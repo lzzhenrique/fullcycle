@@ -4,6 +4,4 @@ node_modules
 sys
 docker/mysql
 package-lock.json
-package.json
 fc-ddd-patterns-main/package-lock.json
-fc-ddd-patterns-main/package.json
