@@ -3,6 +3,5 @@ node_modules
 .swc
 dist
 package-lock.json
-package.json
 fc-ddd-patterns-main/package-lock.json
 fc-ddd-patterns-main/package.json
