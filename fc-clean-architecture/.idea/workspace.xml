@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="02fa5224-4846-4b19-a5de-c7fd9ac4114c" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lzzhenrique&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/codeedu/fc2-arquitetura-hexagonal.git&quot;,
+    &quot;accountId&quot;: &quot;005247a7-ab6b-4cfd-ae86-2fbb7f053692&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2juthLfbrKN3fIzedim1JPPZar3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Jest.Integration test for update product.should update a product.executor": "Run",
+    "Jest.Test create product use case.executor": "Run",
+    "Jest.Test create product use case.should NOT create a product when the name is not defined.executor": "Run",
+    "Jest.Test create product use case.should NOT create a product when the price is below 0.executor": "Run",
+    "Jest.Test create product use case.should NOT create a product when the type is not supported by the factory .executor": "Run",
+    "Jest.Test create product use case.should create a product.executor": "Run",
+    "Jest.Test find a product usecase.executor": "Run",
+    "Jest.Test find a product usecase.should NOT find a product.executor": "Run",
+    "Jest.Test find a product usecase.should find a product.executor": "Run",
+    "Jest.Test find all customers use case.executor": "Run",
+    "Jest.Test find all customers use case.should find all customers.executor": "Run",
+    "Jest.Test find customer use case.executor": "Run",
+    "Jest.Test find customer use case.should NOT find a customer .executor": "Run",
+    "Jest.Test find customer use case.should find a customer  (1).executor": "Debug",
+    "Jest.Test find customer use case.should find a customer .executor": "Run",
+    "Jest.Test list product usecase.should find a products.executor": "Run",
+    "Jest.Test list products.should find all products.executor": "Run",
+    "Jest.Unit test create a product.should NOT create a product .executor": "Run",
+    "Jest.Unit test create a product.should NOT create a product when the name is not defined.executor": "Run",
+    "Jest.Unit test create a product.should NOT create a product when the price is below 0 .executor": "Run",
+    "Jest.Unit test create a product.should create a customer .executor": "Run",
+    "Jest.Unit test create customer.executor": "Run",
+    "Jest.Unit test create customer.should NOT create a customer.executor": "Run",
+    "Jest.Unit test create customer.should create a customer.executor": "Run",
+    "Jest.Unit test find a product.should find a product by his ID.executor": "Run",
+    "Jest.Unit test for customer update.should update a customer.executor": "Run",
+    "Jest.Unit test for update product.should update a product.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "fc-clean-architecture",
+    "last_opened_file_path": "/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/src/usecase/product/list",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/node_modules/jest",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/usecase/product/list" />
+      <recent name="$PROJECT_DIR$/src/usecase" />
+      <recent name="$PROJECT_DIR$/src/usecase/customer" />
+      <recent name="$PROJECT_DIR$/src/usecase/customer/find" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.Unit test for update product.should update a product">
+    <configuration name="Integration test for update product.should update a product" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/usecase/product/update/update.product.integration.spec.ts" />
+      <test-names>
+        <test-name value="Integration test for update product" />
+        <test-name value="should update a product" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test find all customers use case" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/usecase/customer/list/list.customer.unit.spec.ts" />
+      <test-names>
+        <test-name value="Test find all customers use case" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test list product usecase.should find a products" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/usecase/product/list/list.product.integration.spec.ts" />
+      <test-names>
+        <test-name value="Test list product usecase" />
+        <test-name value="should find a products" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test list products.should find all products" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/usecase/product/list/list.product.unit.spec.ts" />
+      <test-names>
+        <test-name value="Test list products" />
+        <test-name value="should find all products" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit test for update product.should update a product" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/usecase/product/update/update.product.unit.spec.ts" />
+      <test-names>
+        <test-name value="Unit test for update product" />
+        <test-name value="should update a product" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Unit test for update product.should update a product" />
+        <item itemvalue="Jest.Integration test for update product.should update a product" />
+        <item itemvalue="Jest.Test list product usecase.should find a products" />
+        <item itemvalue="Jest.Test list products.should find all products" />
+        <item itemvalue="Jest.Test find all customers use case" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17890.13" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02fa5224-4846-4b19-a5de-c7fd9ac4114c" name="Changes" comment="" />
+      <created>1722248908450</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722248908450</updated>
+      <workItem from="1722248910227" duration="4610000" />
+      <workItem from="1722595927184" duration="4025000" />
+      <workItem from="1722642169914" duration="4656000" />
+      <workItem from="1722876880640" duration="6944000" />
+      <workItem from="1722883834664" duration="1483000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

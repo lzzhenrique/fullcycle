@@ -1,0 +1,6 @@
+node_modules
+.vscode
+.swc
+dist
+package-lock.json
+fc-ddd-patterns-main/package-lock.json
