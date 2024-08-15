@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02fa5224-4846-4b19-a5de-c7fd9ac4114c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/domain/@shared/validator/validator.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/customer/factory/customer.validator.factory.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/customer/validator/customer.yup.validator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/product/factory/ProductValidatorFactory.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/product/validator/product.yup.validator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/api/presenters/customer.presenter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/infrastructure/api/presenters/products.presenter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/@shared/entity/entity.abstract.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/@shared/entity/entity.abstract.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/customer/entity/customer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/customer/entity/customer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/product/entity/product.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/product/entity/product.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/product/entity/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/product/entity/product.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/api/__tests__/customer.e2e.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/api/__tests__/customer.e2e.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/api/routes/customer.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/api/routes/customer.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/api/__tests__/products.e2e.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/api/__tests__/products.e2e.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/api/presenters/customer.presenter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/api/presenters/customer.presenter.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +59,8 @@
     "Jest.E2E test for product.executor": "Run",
     "Jest.E2E test for product.should be able to create a product.executor": "Run",
     "Jest.Integration test for update product.should update a product.executor": "Run",
+    "Jest.Product unit tests.should throw error when price is less than zero.executor": "Run",
+    "Jest.Product unit tests.should throw more than one error.executor": "Run",
     "Jest.Test create product use case.executor": "Run",
     "Jest.Test create product use case.should NOT create a product when the name is not defined.executor": "Run",
     "Jest.Test create product use case.should NOT create a product when the price is below 0.executor": "Run",
@@ -103,7 +93,7 @@
     "Jest.Unit tests for notification.should get all errors props.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "fc-clean-architecture",
-    "last_opened_file_path": "/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/src/domain/product/validator",
+    "last_opened_file_path": "/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/src/infrastructure/api/presenters",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -117,30 +107,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/infrastructure/api/presenters" />
       <recent name="$PROJECT_DIR$/src/domain/product/validator" />
       <recent name="$PROJECT_DIR$/src/infrastructure/api/__tests__" />
       <recent name="$PROJECT_DIR$/src/infrastructure/api/routes" />
       <recent name="$PROJECT_DIR$/src/usecase/product/list" />
-      <recent name="$PROJECT_DIR$/src/usecase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Product unit tests.should throw error when price is less than zero">
-    <configuration name="Customer unit tests.should throw error when id is empty" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/domain/customer/entity/customer.spec.ts" />
-      <test-names>
-        <test-name value="Customer unit tests" />
-        <test-name value="should throw error when id is empty" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Jest.E2E test for product.should list products">
     <configuration name="Customer unit tests.should throw error when name is empty" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -164,6 +141,19 @@
       <test-names>
         <test-name value="E2E test for customer" />
         <test-name value="should list customers" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E test for product.should list products" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/infrastructure/api/__tests__/products.e2e.spec.ts" />
+      <test-names>
+        <test-name value="E2E test for product" />
+        <test-name value="should list products" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -195,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.E2E test for product.should list products" />
         <item itemvalue="Jest.Product unit tests.should throw error when price is less than zero" />
         <item itemvalue="Jest.Product unit tests.should throw more than one error" />
         <item itemvalue="Jest.E2E test for customer.should list customers" />
         <item itemvalue="Jest.Customer unit tests.should throw error when name is empty" />
-        <item itemvalue="Jest.Customer unit tests.should throw error when id is empty" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +218,7 @@
       <workItem from="1723063883957" duration="25000" />
       <workItem from="1723112217752" duration="2511000" />
       <workItem from="1723460466205" duration="3097000" />
-      <workItem from="1723736911088" duration="1444000" />
+      <workItem from="1723736911088" duration="2598000" />
     </task>
     <servers />
   </component>
