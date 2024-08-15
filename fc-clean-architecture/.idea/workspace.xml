@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02fa5224-4846-4b19-a5de-c7fd9ac4114c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/domain/@shared/entity/entity.abstract.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/@shared/notification/notification.error.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/@shared/notification/notification.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/@shared/notification/notification.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/@shared/validator/validator.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/customer/factory/customer.validator.factory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/customer/validator/customer.yup.validator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/product/factory/ProductValidatorFactory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/product/validator/product.yup.validator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/infrastructure/api/presenters/customer.presenter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/customer/entity/customer.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/customer/entity/customer.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/@shared/entity/entity.abstract.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/@shared/entity/entity.abstract.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/customer/entity/customer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/customer/entity/customer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/product/entity/product.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/product/entity/product.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/product/entity/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/product/entity/product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/api/__tests__/customer.e2e.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/api/__tests__/customer.e2e.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/api/routes/customer.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/api/routes/customer.routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,74 +60,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Jest.Customer unit tests.should throw error when id is empty.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Customer unit tests.should throw error when name is empty.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.E2E test for customer.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.E2E test for customer.should be list customers.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.E2E test for customer.should list customers.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.E2E test for customer.should not create a customer.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.E2E test for product.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.E2E test for product.should be able to create a product.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Integration test for update product.should update a product.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test create product use case.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test create product use case.should NOT create a product when the name is not defined.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test create product use case.should NOT create a product when the price is below 0.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test create product use case.should NOT create a product when the type is not supported by the factory .executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test create product use case.should create a product.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test find a product usecase.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test find a product usecase.should NOT find a product.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test find a product usecase.should find a product.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test find all customers use case.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test find all customers use case.should find all customers.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test find customer use case.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test find customer use case.should NOT find a customer .executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test find customer use case.should find a customer  (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Jest.Test find customer use case.should find a customer .executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test list product usecase.should find a products.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Test list products.should find all products.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit test create a product.should NOT create a product .executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit test create a product.should NOT create a product when the name is not defined.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit test create a product.should NOT create a product when the price is below 0 .executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit test create a product.should create a customer .executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit test create customer.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit test create customer.should NOT create a customer.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit test create customer.should create a customer.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit test find a product.should find a product by his ID.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit test for customer update.should update a customer.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit test for update product.should update a product.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit tests for notification.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit tests for notification.should check if notification has some error.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit tests for notification.should create errors.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Unit tests for notification.should get all errors props.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;fc-clean-architecture&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/src/infrastructure/api/__tests__&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/node_modules/jest&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Jest.Customer unit tests.should throw error when id is empty.executor": "Run",
+    "Jest.Customer unit tests.should throw error when name is empty.executor": "Run",
+    "Jest.E2E test for customer.executor": "Run",
+    "Jest.E2E test for customer.should be list customers.executor": "Run",
+    "Jest.E2E test for customer.should list customers.executor": "Run",
+    "Jest.E2E test for customer.should not create a customer.executor": "Run",
+    "Jest.E2E test for product.executor": "Run",
+    "Jest.E2E test for product.should be able to create a product.executor": "Run",
+    "Jest.Integration test for update product.should update a product.executor": "Run",
+    "Jest.Test create product use case.executor": "Run",
+    "Jest.Test create product use case.should NOT create a product when the name is not defined.executor": "Run",
+    "Jest.Test create product use case.should NOT create a product when the price is below 0.executor": "Run",
+    "Jest.Test create product use case.should NOT create a product when the type is not supported by the factory .executor": "Run",
+    "Jest.Test create product use case.should create a product.executor": "Run",
+    "Jest.Test find a product usecase.executor": "Run",
+    "Jest.Test find a product usecase.should NOT find a product.executor": "Run",
+    "Jest.Test find a product usecase.should find a product.executor": "Run",
+    "Jest.Test find all customers use case.executor": "Run",
+    "Jest.Test find all customers use case.should find all customers.executor": "Run",
+    "Jest.Test find customer use case.executor": "Run",
+    "Jest.Test find customer use case.should NOT find a customer .executor": "Run",
+    "Jest.Test find customer use case.should find a customer  (1).executor": "Debug",
+    "Jest.Test find customer use case.should find a customer .executor": "Run",
+    "Jest.Test list product usecase.should find a products.executor": "Run",
+    "Jest.Test list products.should find all products.executor": "Run",
+    "Jest.Unit test create a product.should NOT create a product .executor": "Run",
+    "Jest.Unit test create a product.should NOT create a product when the name is not defined.executor": "Run",
+    "Jest.Unit test create a product.should NOT create a product when the price is below 0 .executor": "Run",
+    "Jest.Unit test create a product.should create a customer .executor": "Run",
+    "Jest.Unit test create customer.executor": "Run",
+    "Jest.Unit test create customer.should NOT create a customer.executor": "Run",
+    "Jest.Unit test create customer.should create a customer.executor": "Run",
+    "Jest.Unit test find a product.should find a product by his ID.executor": "Run",
+    "Jest.Unit test for customer update.should update a customer.executor": "Run",
+    "Jest.Unit test for update product.should update a product.executor": "Run",
+    "Jest.Unit tests for notification.executor": "Run",
+    "Jest.Unit tests for notification.should check if notification has some error.executor": "Run",
+    "Jest.Unit tests for notification.should create errors.executor": "Run",
+    "Jest.Unit tests for notification.should get all errors props.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "fc-clean-architecture",
+    "last_opened_file_path": "/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/src/domain/product/validator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/node_modules/jest",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/domain/product/validator" />
       <recent name="$PROJECT_DIR$/src/infrastructure/api/__tests__" />
       <recent name="$PROJECT_DIR$/src/infrastructure/api/routes" />
       <recent name="$PROJECT_DIR$/src/usecase/product/list" />
       <recent name="$PROJECT_DIR$/src/usecase" />
-      <recent name="$PROJECT_DIR$/src/usecase/customer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Customer unit tests.should throw error when name is empty">
+  <component name="RunManager" selected="Jest.Product unit tests.should throw error when price is less than zero">
     <configuration name="Customer unit tests.should throw error when id is empty" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -146,51 +154,52 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Unit tests for notification" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/domain/@shared/notification/notification.spec.ts" />
-      <test-names>
-        <test-name value="Unit tests for notification" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Unit tests for notification.should check if notification has some error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="E2E test for customer.should list customers" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/domain/@shared/notification/notification.spec.ts" />
+      <test-file value="$PROJECT_DIR$/src/infrastructure/api/__tests__/customer.e2e.spec.ts" />
       <test-names>
-        <test-name value="Unit tests for notification" />
-        <test-name value="should check if notification has some error" />
+        <test-name value="E2E test for customer" />
+        <test-name value="should list customers" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Unit tests for notification.should get all errors props" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Product unit tests.should throw error when price is less than zero" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/domain/@shared/notification/notification.spec.ts" />
+      <test-file value="$PROJECT_DIR$/src/domain/product/entity/product.spec.ts" />
       <test-names>
-        <test-name value="Unit tests for notification" />
-        <test-name value="should get all errors props" />
+        <test-name value="Product unit tests" />
+        <test-name value="should throw error when price is less than zero" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Product unit tests.should throw more than one error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/domain/product/entity/product.spec.ts" />
+      <test-names>
+        <test-name value="Product unit tests" />
+        <test-name value="should throw more than one error" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Product unit tests.should throw error when price is less than zero" />
+        <item itemvalue="Jest.Product unit tests.should throw more than one error" />
+        <item itemvalue="Jest.E2E test for customer.should list customers" />
         <item itemvalue="Jest.Customer unit tests.should throw error when name is empty" />
         <item itemvalue="Jest.Customer unit tests.should throw error when id is empty" />
-        <item itemvalue="Jest.Unit tests for notification" />
-        <item itemvalue="Jest.Unit tests for notification.should get all errors props" />
-        <item itemvalue="Jest.Unit tests for notification.should check if notification has some error" />
       </list>
     </recent_temporary>
   </component>
@@ -217,6 +226,9 @@
       <workItem from="1722942165159" duration="3634000" />
       <workItem from="1723026879444" duration="3748000" />
       <workItem from="1723063883957" duration="25000" />
+      <workItem from="1723112217752" duration="2511000" />
+      <workItem from="1723460466205" duration="3097000" />
+      <workItem from="1723736911088" duration="1444000" />
     </task>
     <servers />
   </component>
