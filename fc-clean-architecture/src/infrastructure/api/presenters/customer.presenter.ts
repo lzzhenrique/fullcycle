@@ -1,6 +1,5 @@
 import { toXML } from "jstoxml";
 import {OutputListCustomerDto} from "../../../usecase/customer/list/list.customer.dto";
-import Customer from "../../../domain/customer/entity/customer";
 
 export default class CustomerPresenter {
     static toXML(data: OutputListCustomerDto): string {
