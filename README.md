@@ -9,3 +9,5 @@ Repositório dedicado ao curso FullCycle 3.0
 **[Clean-Arch] Desafio de UseCases** -> https://github.com/lzzhenrique/fullcycle/tree/main/fc-clean-architecture)
 
 **[Clean-Arch] Desafio de endpoint para products** -> https://github.com/lzzhenrique/fullcycle/tree/main/fc-clean-architecture)
+
+**[Clean-Arch] Desafio de notification pattern para products** -> https://github.com/lzzhenrique/fullcycle/tree/main/fc-clean-architecture)
