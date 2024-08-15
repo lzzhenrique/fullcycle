@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02fa5224-4846-4b19-a5de-c7fd9ac4114c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/api/__tests__/customer.e2e.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/api/__tests__/products.e2e.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/api/express.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/api/routes/customer.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/api/routes/products.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/api/server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/@shared/validator/validator.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/customer/factory/customer.validator.factory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/customer/validator/customer.yup.validator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/product/factory/ProductValidatorFactory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/product/validator/product.yup.validator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/infrastructure/api/presenters/customer.presenter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/@shared/entity/entity.abstract.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/@shared/entity/entity.abstract.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/customer/entity/customer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/customer/entity/customer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/product/entity/product.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/product/entity/product.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/product/entity/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/product/entity/product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/api/__tests__/customer.e2e.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/api/__tests__/customer.e2e.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/api/routes/customer.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/api/routes/customer.routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +62,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Jest.Customer unit tests.should throw error when id is empty.executor": "Run",
+    "Jest.Customer unit tests.should throw error when name is empty.executor": "Run",
     "Jest.E2E test for customer.executor": "Run",
     "Jest.E2E test for customer.should be list customers.executor": "Run",
     "Jest.E2E test for customer.should list customers.executor": "Run",
@@ -89,9 +97,13 @@
     "Jest.Unit test find a product.should find a product by his ID.executor": "Run",
     "Jest.Unit test for customer update.should update a customer.executor": "Run",
     "Jest.Unit test for update product.should update a product.executor": "Run",
+    "Jest.Unit tests for notification.executor": "Run",
+    "Jest.Unit tests for notification.should check if notification has some error.executor": "Run",
+    "Jest.Unit tests for notification.should create errors.executor": "Run",
+    "Jest.Unit tests for notification.should get all errors props.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/src/infrastructure/api/__tests__",
+    "git-widget-placeholder": "fc-clean-architecture",
+    "last_opened_file_path": "/home/luiz-henrique/Studies/fullcycle/fc-clean-architecture/src/domain/product/validator",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -105,27 +117,40 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/domain/product/validator" />
       <recent name="$PROJECT_DIR$/src/infrastructure/api/__tests__" />
       <recent name="$PROJECT_DIR$/src/infrastructure/api/routes" />
       <recent name="$PROJECT_DIR$/src/usecase/product/list" />
       <recent name="$PROJECT_DIR$/src/usecase" />
-      <recent name="$PROJECT_DIR$/src/usecase/customer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.E2E test for product.should list products">
-    <configuration name="E2E test for customer.should be list customers" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.Product unit tests.should throw error when price is less than zero">
+    <configuration name="Customer unit tests.should throw error when id is empty" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/infrastructure/api/__tests__/customer.e2e.spec.ts" />
+      <test-file value="$PROJECT_DIR$/src/domain/customer/entity/customer.spec.ts" />
       <test-names>
-        <test-name value="E2E test for customer" />
-        <test-name value="should be list customers" />
+        <test-name value="Customer unit tests" />
+        <test-name value="should throw error when id is empty" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Customer unit tests.should throw error when name is empty" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/domain/customer/entity/customer.spec.ts" />
+      <test-names>
+        <test-name value="Customer unit tests" />
+        <test-name value="should throw error when name is empty" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -142,51 +167,39 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="E2E test for product" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/infrastructure/api/__tests__/products.e2e.spec.ts" />
-      <test-names>
-        <test-name value="E2E test for product" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="E2E test for product.should be able to create a product" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Product unit tests.should throw error when price is less than zero" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/infrastructure/api/__tests__/products.e2e.spec.ts" />
+      <test-file value="$PROJECT_DIR$/src/domain/product/entity/product.spec.ts" />
       <test-names>
-        <test-name value="E2E test for product" />
-        <test-name value="should be able to create a product" />
+        <test-name value="Product unit tests" />
+        <test-name value="should throw error when price is less than zero" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="E2E test for product.should list products" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Product unit tests.should throw more than one error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/infrastructure/api/__tests__/products.e2e.spec.ts" />
+      <test-file value="$PROJECT_DIR$/src/domain/product/entity/product.spec.ts" />
       <test-names>
-        <test-name value="E2E test for product" />
-        <test-name value="should list products" />
+        <test-name value="Product unit tests" />
+        <test-name value="should throw more than one error" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.E2E test for product.should list products" />
-        <item itemvalue="Jest.E2E test for product.should be able to create a product" />
-        <item itemvalue="Jest.E2E test for product" />
+        <item itemvalue="Jest.Product unit tests.should throw error when price is less than zero" />
+        <item itemvalue="Jest.Product unit tests.should throw more than one error" />
         <item itemvalue="Jest.E2E test for customer.should list customers" />
-        <item itemvalue="Jest.E2E test for customer.should be list customers" />
+        <item itemvalue="Jest.Customer unit tests.should throw error when name is empty" />
+        <item itemvalue="Jest.Customer unit tests.should throw error when id is empty" />
       </list>
     </recent_temporary>
   </component>
@@ -211,6 +224,11 @@
       <workItem from="1722876880640" duration="6944000" />
       <workItem from="1722883834664" duration="1483000" />
       <workItem from="1722942165159" duration="3634000" />
+      <workItem from="1723026879444" duration="3748000" />
+      <workItem from="1723063883957" duration="25000" />
+      <workItem from="1723112217752" duration="2511000" />
+      <workItem from="1723460466205" duration="3097000" />
+      <workItem from="1723736911088" duration="1444000" />
     </task>
     <servers />
   </component>
