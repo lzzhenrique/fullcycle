@@ -60,7 +60,6 @@ describe("E2E test for product", () => {
 
         expect(listResponseXML.status).toBe(200);
         expect(listResponseXML.text).toContain(`<?xml version="1.0" encoding="UTF-8"?>`);
-        console.log(listResponseXML.text);
 
     })
 })

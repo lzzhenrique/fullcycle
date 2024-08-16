@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02fa5224-4846-4b19-a5de-c7fd9ac4114c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/api/presenters/products.presenter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/infrastructure/api/__tests__/products.e2e.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/api/__tests__/products.e2e.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/api/presenters/customer.presenter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/api/presenters/customer.presenter.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +55,7 @@
     "Jest.E2E test for customer.should not create a customer.executor": "Run",
     "Jest.E2E test for product.executor": "Run",
     "Jest.E2E test for product.should be able to create a product.executor": "Run",
+    "Jest.E2E test for product.should list products.executor": "Run",
     "Jest.Integration test for update product.should update a product.executor": "Run",
     "Jest.Product unit tests.should throw error when price is less than zero.executor": "Run",
     "Jest.Product unit tests.should throw more than one error.executor": "Run",
@@ -218,7 +216,7 @@
       <workItem from="1723063883957" duration="25000" />
       <workItem from="1723112217752" duration="2511000" />
       <workItem from="1723460466205" duration="3097000" />
-      <workItem from="1723736911088" duration="2598000" />
+      <workItem from="1723736911088" duration="2743000" />
     </task>
     <servers />
   </component>
